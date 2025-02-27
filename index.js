@@ -29,7 +29,7 @@ function operate(operator, aNum, bNum) {
     return divide(aNum, bNum);
   }
 }
-console.log(operate("/", 100, 200));
+// console.log(operate("/", 100, 200));
 // console.log(add(10, 100));
 // console.log(substract(20, 10));
 // console.log(multiply(2, 10));
