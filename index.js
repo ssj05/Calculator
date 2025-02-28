@@ -1,5 +1,8 @@
-let num1 = 0;
-let num2 = 0;
+const display = document.querySelector(".display");
+const clearBtn = document.querySelector(".clear");
+const inputBtns = document.querySelectorAll(".input li");
+let num1 = "";
+let num2 = "";
 let op = "";
 
 function add(a, b) {
@@ -34,3 +37,21 @@ function operate(operator, aNum, bNum) {
 // console.log(substract(20, 10));
 // console.log(multiply(2, 10));
 // console.log(divide(50, 5));
+
+function displayOutput(str) {
+  display.textContent = str;
+}
+displayOutput("Hello, World!");
+
+function clear() {
+  displayOutput("");
+}
+clearBtn.addEventListener("click", (e) => {
+  clear();
+});
+
+inputBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    displayOutput(btn.textContent);
+  });
+});

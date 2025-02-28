@@ -17,8 +17,12 @@ body {
 }
 .display {
   height: 8em;
-  width: 23em;
+  width: 21em;
   background-color: #eaeaea;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1em;
 }
 
 .input {
